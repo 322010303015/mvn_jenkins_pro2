@@ -10,5 +10,12 @@ pipeline {
 		'''
             }
         }
+	    stage('Run') {
+            steps {
+                bat '''
+			java -jar target/java-project2-1.0-SNAPSHOT.jar
+		'''
+            }
+        }
     }
 }
